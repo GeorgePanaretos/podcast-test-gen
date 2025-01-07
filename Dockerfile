@@ -7,13 +7,15 @@ RUN apt-get update && apt-get install -y \
     git \
     build-essential \
     libyaml-dev \
+    python3-yaml \
     && apt-get clean
+
 
 # Upgrade pip to the latest version
 #RUN pip3 install --upgrade pip --break-system-packages
 
 # Install PyYAML
-RUN pip3 install PyYAML
+#RUN pip3 install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 COPY entrypoint.sh /entrypoint.sh
