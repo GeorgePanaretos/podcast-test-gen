@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean
 
 # Upgrade pip to the latest version
-RUN pip3 install --upgrade pip --break-system-packages
+#RUN pip3 install --upgrade pip --break-system-packages
 
 # Install PyYAML
 RUN pip3 install PyYAML
